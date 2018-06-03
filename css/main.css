@@ -1,3 +1,300 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+
+/*--------------------------------------------------------------
+
+>>> TABLE OF CONTENTS:
+
+----------------------------------------------------------------
+
+1.0 - Typography
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons
+	1.4 - Forms
+
+2.0 - Navigation Menus
+	2.1 - Main
+	2.2 - Footer
+
+3.0 - Content
+	3.1 - Site Structure
+	3.2 - Site Header
+	3.3 - Site Footer
+
+4.0 - Media
+
+5.0 - Utility
+	5.1 - Text Sizes
+	5.2 - Colors
+	5.3 - Alignments
+
+--------------------------------------------------------------*/
+
+.wrapper {
+	width: 1180px;
+}
+
+.row {
+	overflow: auto;
+}
+
+.wrapper, header:last-child, .intro, .row:nth-child(3), footer ul {
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+1.0 - Typography
+-------------------------------------------------------------- */
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1, nav li:first-child a, section .row section h2 {
+	font-family: 'Scope One', serif;
+}
+
+ul, h1, p, h2 {
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+	-webkit-padding-start: 0;
+}
+
+header span, nav li:first-child, h2 {
+	text-transform: uppercase;
+}
+
+h1 span, nav li:first-child a {
+	color: #a0c250;
+}
+
+header li a, header:last-child a {
+	color: #fff;
+}
+
+h1, section .row section {
+	color: #003441;
+}
+
+nav li:first-child a {
+	font-size: 35px;
+	margin-left: 40px;
+}
+
+header:last-child h2, footer ul {
+	text-align: center;
+}
+
+p, nav li, h2 {
+	font-weight: 500;
+}
+
+nav li, p {
+	font-size: 18px;
+}
+
+/*	1.1 - Headings        */
+
+h1 {
+	font-size: 60px;
+	font-weight: 200;
+	line-height: .9;
+}
+
+h1 span, header:last-child h2 {
+	font-size: 20px;
+}
+
+h1 span {
+	font-weight: 600;
+}
+
+header:last-child h2 {
+	padding: 10px 0;
+}
+
+
+
+/*	1.2 - Body Copy       */
+
+p {
+	line-height: 1.5;
+}
+
+.intro header, .intro h1 {
+	margin-bottom: 37px;
+}
+
+section .row section p {
+	font-size: 16px;
+	padding: 20px;
+}
+
+/*	1.3 - Buttons         */
+
+a {
+	text-decoration: none;
+}
+
+/*	1.4 - Forms           */
+
+
+
+/*--------------------------------------------------------------
+2.0 - Navigation Menus
+-------------------------------------------------------------- */
+
+li {
+	list-style: none;
+}
+
+ul a, li {
+	display: inline-block;
+}
+
+/*	2.1 - Main             */
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+nav li {
+	padding: 38px 120px 42px 0;
+}
+
+
+/*	2.2 - Footer           */
+
+footer span {
+	display: none;
+}
+
+footer ul a {
+	width: 43px;
+	height: 43px;
+}
+
+footer li {
+	margin: 0 10px;
+}
+
+footer li:first-child a {
+	background: url(../img/sprite-facebook.png) no-repeat 0 0;
+}
+
+footer li:nth-child(2) a {
+	background: url(../img/sprite-flickr.png) no-repeat 0 0;
+}
+
+footer li:last-child a {
+	background: url(../img/sprite-twitter.png) no-repeat 0 0;
+}
+
+footer li a:hover {
+	background-position: 0 -43px;
+}
+
+
+
+/*--------------------------------------------------------------
+3.0 - Content
+-------------------------------------------------------------- */
+
+
+
+.sticky, header:last-child {
+	background-color: #003441;
+}
+
+#home > header div:last-child {
+	background-color: #fff;
+}
+
+/*	3.1 - Site Structure    */
+
+.col, .row > img {
+	float: left;
+}
+
+.col:last-child, .row > div:last-child {
+	float: right;
+}
+
+#home .col {
+	margin: 120px 0;
+}
+
+#home .col:nth-child(2) {
+	margin-left: 140px;
+}
+
+header:last-child {
+	width: 150px;
+}
+
+/* align photo about page */
+.intro img {
+	margin-top: 6px;
+}
+
+/* float widths  */
+
+#home .col {
+	width: 300px;
+}
+
+.row > div:last-child {
+	width: 368px;
+}
+
+section .row section {
+	width: 330px;
+}
+
+/*	3.2 - Site Header       */
+
+section:nth-child(2) > header, .intro {
+	margin-top: 200px;
+}
+
+.intro  {
+	width: 750px;
+}
+
+/*	3.3 - Site Footer       */
+
+footer {
+	padding: 240px 0 30px;
+}
+
+/*--------------------------------------------------------------
+4.0 - Media
+-------------------------------------------------------------- */
+
+img[src*="index-"] {
+	width: 300px;
+	height: 200px;
+}
+
+img[src*="work"]:first-child {
+	width: 275px;
+}
+
+
+/*--------------------------------------------------------------
+5.0 - Utility
+-------------------------------------------------------------- */
+
+/*	5.1 - Text Sizes        */
+
+/*	5.2 - Colors            */
+
+/*	5.3 - Alignments        */
+
+
