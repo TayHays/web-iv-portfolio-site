@@ -98,6 +98,10 @@ nav li, p {
 	font-size: 18px;
 }
 
+h1 span, #w-b-row p {
+	font-weight: 600;
+}
+
 /*	1.1 - Headings        */
 
 h1 {
@@ -110,15 +114,13 @@ h1 span, header:last-child h2, form p:last-child {
 	font-size: 20px;
 }
 
-h1 span, #w-b-row p {
-	font-weight: 600;
-}
-
 #w-b-row h2 {
 	font-size: 20px;
 }
 
-
+#w-b-row h1 {
+	margin-left: 20px;
+}
 
 /*	1.2 - Body Copy       */
 
@@ -252,6 +254,16 @@ h1 span, nav li:first-child a, nav li a:hover {
 
 header:last-child a:hover, form p:last-child a:hover {
 	background-color: #429b9e;
+	display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 #w-b-row a:hover {
